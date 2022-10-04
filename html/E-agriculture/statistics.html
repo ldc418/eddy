@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="vieport" content="width=device-width" , initial-scale="1.0">
+        <title>statistics</title>
+        <link href="../../css/E-agriculture/statistics.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="intro_bg">
+                <div class="header">
+                    <div class="searchArea">
+                    </div>
+                    <ul class="nav">
+                        <li>
+                            <a href="../homepage.html" target="_self">
+                                <img src="../../logo/KakaoTalk_20220920_120852364-removebg-preview.png" width="100">
+                            </a>
+                        </li>
+                        <li><a href="../E-agriculture/dashboard.html">Dash board</a></li>
+                        <li><a href="../E-agriculture/remote control.html">Remote control</a></li>
+                        <li><a href="../E-agriculture/management.html">Management</a></li>
+                        <li><a href="../E-agriculture/statistics.html">Statistics</a></li>
+                        <li><a href="../E-agriculture/A.I data.html">A.I data</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="ldc418">
+                <div class="intro_bg2">
+                    <<div class="header_2">
+                        <div>
+                            <ul  class="abc1">
+                                <li><canvas id="myChart1" width="540" height="250"></canvas></li>
+                                <li><canvas id="myChart2" width="540" height="250"></canvas></li>
+                               
+                            </ul>
+                            <ul  class="abc2">
+                                <li><canvas id="myChart3" width="540" height="250"></canvas></li>
+                                <li><canvas id="myChart4" width="540" height="250"></canvas></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" ></script>
+
+    <script>
+        // ajax
+        // 
+        let chartData = [3, 1, 1, 1, 1, 3];
+
+        const ctx = document.getElementById('myChart1');
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6',],
+                datasets: [{
+                    label: '# of Votes',
+                    data: chartData,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script>
+        // ajax
+        // 
+        let chartData2 = [3, 1, 3, 5, 2, 3];
+
+        const ctx2 = document.getElementById('myChart2');
+        const myChart2 = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6',],
+                datasets: [{
+                    label: '# of Votes',
+                    data: chartData,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+
+    <script>
+        // ajax
+        // 
+        let chartData3 = [3, 1, 3, 5, 2, 3];
+
+        const ctx3 = document.getElementById('myChart3');
+        const myChart3 = new Chart(ctx3, {
+            type: 'line',
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6',],
+                datasets: [{
+                    label: '# of Votes',
+                    data: chartData,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script>
+        // ajax
+        // 
+        let chartData4 = [3, 1, 3, 5, 2, 3];
+
+        const ctx4 = document.getElementById('myChart4');
+        const myChart4 = new Chart(ctx4, {
+            type: 'line',
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6',],
+                datasets: [{
+                    label: '# of Votes',
+                    data: chartData,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+
+    
+
+
+    
+    
+    
+</html>
+
+
+<!-- <script type="text/javascript">
+    window.onload = function() {
+        var httpRequest;
+        /* button이 클릭되었을때 이벤트 */
+        document.getElementById("ajaxButton").addEventListener('click', () => {
+            /* textBox에 작성된 name 데이터를 가져옴 */
+            var inputName = document.getElementById("inputName").value;
+            /* 입력된 데이터 Json 형식으로 변경 */
+            var reqJson = new Object();
+            reqJson.name = inputName;
+            /* 통신에 사용 될 XMLHttpRequest 객체 정의 */
+            httpRequest = new XMLHttpRequest();
+            /* httpRequest의 readyState가 변화했을때 함수 실행 */
+            httpRequest.onreadystatechange = () => {
+                /* readyState가 Done이고 응답 값이 200일 때, 받아온 response로 name과 age를 그려줌 */
+                if (httpRequest.readyState === XMLHttpRequest.DONE) {
+                      if (httpRequest.status === 200) {
+                        var result = httpRequest.response;
+                        document.getElementById("name").innerText = result.name;
+                        document.getElementById("age").innerText = result.age;
+                      } else {
+                        alert('request에 뭔가 문제가 있어요.');
+                      }
+                }
+            };
+            /* Post 방식으로 요청 */
+            httpRequest.open('POST', '/postAgeByName', true);
+            /* Response Type을 Json으로 사전 정의 */
+            httpRequest.responseType = "json";
+            /* 요청 Header에 컨텐츠 타입은 Json으로 사전 정의 */
+            httpRequest.setRequestHeader('Content-Type', 'application/json');
+            /* 정의된 서버에 Json 형식의 요청 Data를 포함하여 요청을 전송 */
+            httpRequest.send(JSON.stringify(reqJson));
+            
+        });
+    }
+    </script> -->
